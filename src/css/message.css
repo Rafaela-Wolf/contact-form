@@ -1,0 +1,20 @@
+.form-data .message-label {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--neutral-darker-grey);
+    padding-bottom: 5px;
+}
+
+.form-data .message-textarea {
+    padding: 22px;
+    border-radius: 5px;
+    border: 1px solid var(--neutral-medium-grey);
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.form-data .message-textarea:hover {
+    border-color: var(--primary-medium-green);
+    transform: scale(1.03);
+}

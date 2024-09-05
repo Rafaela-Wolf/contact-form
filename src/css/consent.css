@@ -1,0 +1,21 @@
+.form-data .consent-label {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--neutral-darker-grey);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    padding-bottom: 6px;
+}
+
+.form-data .consent-label::before {
+    content: url('../../assets/images/icon-checkbox.svg');
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.form-data .consent-label:hover::before {
+    transform: scale(1.1);
+}

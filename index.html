@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta name="description" content="Contact Form">
+
+  <link rel="shortcut icon" href="assets/images/icons8-contact-us-32.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="src/css/reset.css">
+  <link rel="stylesheet" href="src/css/variables.css">
+  <link rel="stylesheet" href="src/css/main.css">
+  <link rel="stylesheet" href="src/css/name-information.css">
+  <link rel="stylesheet" href="src/css/email.css">
+  <link rel="stylesheet" href="src/css/query-type.css">
+  <link rel="stylesheet" href="src/css/message.css">
+  <link rel="stylesheet" href="src/css/consent.css">
+  <link rel="stylesheet" href="src/css/submit-btn.css">
+  <link rel="stylesheet" href="src/css/error-styles.css">
+  <link rel="stylesheet" href="src/css/sucess-state.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
+
+  <title>Contact form</title>
+</head>
+
+<body>
+  <main class="main">
+    <div class="form">
+      <h1 class="title">Contact Us</h1>
+      <form class="form-data" action="index.html" method="post" enctype="multipart/form-data">
+
+        <div class="div-name-infos">
+          <div class="div-first-name-infos">
+            <label class="name-infos-label" for="first-name">First Name *</label>
+            <input class="name-infos-input active-border" type="text" name="first-name" id="first-name">
+            <span>This field is required</span>
+          </div>
+
+          <div class="div-last-name-infos">
+            <label class="name-infos-label" for="last-name">Last Name *</label>
+            <input class="name-infos-input active-border" type="text" name="last-name" id="last-name">
+            <span>This field is required</span>
+          </div>
+        </div>
+
+        <label class="email-address-label" for="email-address">Email Address *</label>
+        <input class="email-address-input" type="text" name="email-address" id="email-address">
+        <span>Please enter a valid email address</span>
+
+        <label class="query-type-label" for="">Query Type *</label>
+        <div class="query-type-buttons">
+          <button class="general-enquiry-btn">General Enquiry</button>
+          <button class="support-request-btn">Support Request</button>
+        </div>
+        <span>Please select a query type</span>
+
+        <label class="message-label" for="message">Message *</label>
+        <textarea class="message-textarea" name="message" id="message"></textarea>
+        <span>This field is required</span>
+
+
+        <label class="consent-label">I consent to being contacted by the team *</label>
+        <span>To submit this form, please consent to being contacted</span>
+
+        <button class="submit-btn" id="submit-btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+  <div class="form-submitted">
+    <h2>Message Sent!</h2>
+    <p>Thanks for completing this form, we'll be in touch soon!</p>
+  </div>
+
+  <script type="text/javascript" src="src/js/index.js"></script>
+</body>
+
+</html>

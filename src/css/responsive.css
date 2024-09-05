@@ -1,0 +1,50 @@
+@media (max-width: 1280px) {
+    .main .form .title {
+        font-size: 18px;
+    }
+
+    .form-data .query-type-buttons .general-enquiry-btn,
+    .form-data .query-type-buttons .support-request-btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        background-color: var(--neutral-white);
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .main .form {
+        box-shadow: none;
+        width: 90%;
+        height: 100%;
+    }
+
+    .form-data .query-type-buttons .general-enquiry-btn,
+    .form-data .query-type-buttons .support-request-btn {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-data .div-name-infos {
+        flex-direction: column;
+    }
+
+    .form-data .div-name-infos .div-first-name-infos,
+    .form-data .div-name-infos .div-last-name-infos {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .form-data .div-name-infos .div-last-name-infos {
+        margin-bottom: 0;
+    }
+
+    .form-data .email-address-input,
+    .form-data .message-textarea {
+        width: 100%;
+    }
+}

@@ -1,0 +1,45 @@
+.form-data .query-type-label {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--neutral-darker-grey);
+    padding-bottom: 5px;
+}
+
+.form-data .query-type-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.form-data .query-type-buttons .general-enquiry-btn,
+.form-data .query-type-buttons .support-request-btn {
+    flex: 1;
+    padding: 6px;
+    font-family: var(--karla-font);
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid var(--neutral-medium-grey);
+    color: var(--neutral-darker-grey);
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.form-data .query-type-buttons .general-enquiry-btn::before,
+.form-data .query-type-buttons .support-request-btn::before {
+    content: url('../../assets/images/icon-radio.svg');
+    display: inline-block;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.form-data .query-type-buttons .general-enquiry-btn:hover,
+.form-data .query-type-buttons .support-request-btn:hover {
+    border-color: var(--primary-medium-green);
+    transform: scale(1.03);
+}

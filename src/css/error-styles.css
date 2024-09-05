@@ -1,0 +1,11 @@
+.error-border {
+    border: 1px solid var(--primary-red);
+}
+
+.error-span {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-red);
+    display: block;
+    padding-top: 6px;
+}
