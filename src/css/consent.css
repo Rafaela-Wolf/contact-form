@@ -16,6 +16,10 @@
     transition: transform 0.3s ease;
 }
 
+.form-data .consent-label.selected-consent::before {
+    content: url('../../assets/images/icon-checkbox-check.svg');
+}
+
 .form-data .consent-label:hover::before {
     transform: scale(1.1);
 }

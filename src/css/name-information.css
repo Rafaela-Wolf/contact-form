@@ -13,25 +13,3 @@
 .form-data .div-name-infos .div-last-name-infos {
     margin-right: 0;
 }
-
-.form-data .div-name-infos .name-infos-label {
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--neutral-darker-grey);
-    padding-bottom: 5px;
-}
-
-.form-data .div-name-infos .name-infos-input {
-    padding: 8px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    width: 100%;
-    border: 1px solid var(--neutral-medium-grey);
-    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
-}
-
-.form-data .div-name-infos .name-infos-input:hover {
-    border-color: var(--primary-medium-green);
-    transform: scale(1.03); 
-}

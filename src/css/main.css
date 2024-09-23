@@ -17,12 +17,12 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 3px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 10px 30px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .main .form {
     background-color: var(--neutral-white);
-    height: 80%;
+    height: fit-content;
     width: 50%;
     border-radius: 8px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
@@ -38,10 +38,44 @@ body {
 .form-data {
     display: flex;
     flex-direction: column;
-    margin: 15px;
+    margin: 12px;
     height: 100%;
 }
 
-.form-data span {
-    display: none;
+.form-data label {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--neutral-darker-grey);
+    padding-bottom: 5px;
+}
+
+.form-data .styled-input-textarea {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--neutral-medium-grey);
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    width: 100%;
+}
+
+.form-data .textarea-padding {
+    padding: 22px;
+}
+
+.form-data .styled-input-textarea:hover {
+    border-color: var(--primary-medium-green);
+    transform: scale(1.03);
+}
+
+.form-data .hidden-span {
+    opacity: 0;
+}
+
+.form-data .hidden-span-query-btn {
+    opacity: 0;
+}
+
+.form-data .hidden-span-consent-btn {
+    opacity: 0;
 }
